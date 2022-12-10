@@ -1,0 +1,59 @@
+body{
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+.main{
+    margin: 40px 250px 0 250px;
+}
+header{
+    margin-bottom: 25px;
+}
+footer{
+    padding-top: 20px;
+}
+.title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: white;
+}
+
+label{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+
+input{
+    background-color: black;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF !important;
+    padding-top: 20px;
+    
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+#text_name, #email_input, #pass_input ,#cPass_input ,#dob_input {
+    width: 100% ;
+}
+
+.submit{
+    height: 50px;
+    width: 220px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
