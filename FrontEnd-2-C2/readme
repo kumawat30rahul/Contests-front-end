@@ -1,0 +1,25 @@
+function adding(){
+            seriolNumber++;
+            let srNo = document.createElement('td')
+            let td_Name = document.createElement('td')
+            let td_profession = document.createElement('td')
+            let td_age = document.createElement('td')
+            let icon = document.createElement('td')
+            
+            srNo.innerText = seriolNumber
+            td_Name.innerText = Name.value
+            td_profession.innerText = Profession.value
+            td_age.innerText = Age.value
+            icon.innerHTML = "<i></i>"
+            icon.setAttribute('class', "bi bi-trash")
+
+            let tr = document.createElement('tr')
+            tr.appendChild = srNo
+            tr.appendChild = td_Name
+            tr.appendChild = td_profession
+            tr.appendChild = td_age
+
+            listBody.appendChild(tr)
+        }
+
+        adding()
