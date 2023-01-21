@@ -53,14 +53,11 @@ speakTextBtn.addEventListener("click",() => {
                 }else{
                     callsRem.innerText = "You have no text to speak calls left"
                 }
-                
-                        if(x>0){
-                            let utterance = new SpeechSynthesisUtterance(answerTextContent.textContent);
-                            window.speechSynthesis.speak(utterance);
-                        }
-                        
-                    
-                
+
+                if(x>0){
+                    let utterance = new SpeechSynthesisUtterance(answerTextContent.textContent);
+                    window.speechSynthesis.speak(utterance);
+                }
             }
         })
     }else{
