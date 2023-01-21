@@ -47,31 +47,3 @@ signUpBtn.addEventListener("click", () => {
 
 })
 
-
-// -------------------------LOGIN PAGE JAVASCRIPT-------------------------//
-
-// if(window.location.href.includes('login.html')){
-//     console.log("login page");
-//     let loginBtn = document.getElementById('loginButton')
-//     loginBtn.addEventListener("click",() => {
-    
-//     console.log("sdfsadfsdfsadfsdf");
-//     let loginEmail = document.getElementById('emailAddress').value
-//     let loginPassword = document.getElementById('passWord').value
-//     let loginErrorMsg = document.getElementById('errorMsg')
-
-//     userData.forEach(user => {
-//         if(loginEmail === user.email && loginPassword === user.password){
-//             window.location.href = "chatGpt.html"
-//         }else{
-//             if(loginEmail === "" && loginPassword === ""){
-//                 loginErrorMsg.innerText = "Please provide valid email and password!"
-//             }else if(loginEmail !== user.email){
-//                 loginErrorMsg.innerText = "Incorrect Email!"
-//             }else if(loginPassword !== user.password){
-//                 loginErrorMsg.innerText = "Incorrect Password!"
-//             }
-//         }
-//     })
-// })
-// }
