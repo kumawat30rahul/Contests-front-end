@@ -64,7 +64,7 @@ function map(user){
 
         let id = document.createElement('td')
         id.innerText = seriolNumber
-        id.className = "number"
+        id.id = "number"
         tr.appendChild(id)
 
         let name = document.createElement('td')
@@ -93,10 +93,11 @@ function map(user){
         icon.addEventListener('click',function(){
 
             tr.remove()
+            
             employees.splice(employees.indexOf(employee),1)
-
-        
-
+            seriolNumber--;
+            render()
+            
             if(employees.length == 0){
                 zeroMssg.style.display = "block"
         
@@ -110,4 +111,16 @@ function map(user){
         
     })
 
+}
+
+
+function render(){
+   
+    let newId = document.querySelectorAll("#number")
+    
+    employees.map((employee,index) => {
+        for(let navinId of newId){
+            navinId.innerText = index + 1;
+        }
+    })
 }

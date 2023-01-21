@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css files/chatGpt.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="intro_code" id="introCode">
+            <h1> ChatGpt</h1>
+           <p class="unique_code" id="uniqueCode">
+            Your unique id is:
+            <span id="uniqueCodeSpan" class="unique_code_span"></span>
+           </p>
+    </div>
+    <div class="questions_div" id="questionsDiv">
+        <label for="question">Ask your question below</label>
+        <div class="question_wrapper" id="questionWrapper">
+            <input type="text" class="question_input" id="question">
+            <button class="q_btn" id="qBtn">ASK</button>
+        </div>
+        <div class="input_question" id="inputQuestions">
+            <p>1: Who is virat kholi</p>
+            <p>2: Who is Rohit Sharma</p>
+            <p>3: Who is CR7</p>
+            <p>4: Who is Steph Curry</p>
+            <p>5: Who are you</p>
+        </div>
+        
+    </div>
+    <div class="answer_wrapper" id="answerWrapper">
+        <h3>Answers:</h3>
+        <div class="speak_to_text_div" id="speakToTextDiv">
+            <div class="answers" id="ans">
+                <h4 class="answer_display" id="answerDisplay"></h4>
+                <img alt="" class="answer_img" id="answerImg">
+            </div>
+            <div class="speach_text" id="speachText">
+                <label for="tokenInput">Type your token</label>
+                <input type="text" class="token_input" id="tokenInput">
+                <button class="speak_text" id="speakText">SPEAK</button>
+            </div>
+            <div class="details" id="userDetails">
+                <h3 class="user_name" id="userName">.</h3>
+                <p>Calls Remaining: <span class="calls" id="userCalls"></span></p>
+            </div>
+        </div>
+    </div>
+    
+   <script src="../javascript file/chatGpt.js"></script>
+</body>
+</html>

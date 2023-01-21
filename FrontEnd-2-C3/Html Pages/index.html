@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css files/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signup_wrapper">
+        <h1 class="heading">SIGN UP</h1>
+        <form id="signupForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="name" id="fullName" minlength="2">
+            <label for="emailAddress">Email Address</label>
+            <input type="email" class="email" id="emailAddress">
+            <label for="newPassword">New Password</label>
+            <input type="password" class="new_password" id="newPassword">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="confirm_password" id="confirmPassword">
+            <button class="sign_up" id="signUp" type="button">Sign Up</button>
+        </form>
+        <p class="error" id="errorMsg"></p>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
