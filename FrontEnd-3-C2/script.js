@@ -3,6 +3,8 @@
 let recipeCardDiv = document.getElementById('recipeList') //===>>>>accessing the div which wil contain the recipes
 let recipeData; //========>>>>>>>>>>initialization to access the fetched data everywhere
 
+
+//==================>>>>>>>>>>>>>function to fetch the data and display the recipes<<<<<<<<<<<<<<<<<<<<<================//
 function getMenu(){
     let recipeCard;
     fetch('https://free-food-menus-api-production.up.railway.app/burgers')
@@ -29,7 +31,10 @@ function getMenu(){
 
 }
 
-window.onload = getMenu()
+window.onload = getMenu() //==================>>>>>>>calling the function when the screen loads to show the recipes
+
+//==================>>>>>>>>>>>>>function to take the orders<<<<<<<<<<<<<<<<<<<<<================//
+
 function takeOrder(){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
@@ -43,27 +48,36 @@ function takeOrder(){
     })
 }
 
-let recipeStatus = {}
+//==================>>>>>>>>>>>>>function orderPreping of recipes<<<<<<<<<<<<<<<<<<<<<================//
+
+let recipeStatus = {
+    order_status: false,
+    paid: false
+}
 function orderPrep(){
     return new Promise((res,rej)=> {
         setTimeout(()=>{
-            recipeStatus.order_status= true,
-            recipeStatus.paid= false
+            recipeStatus['order_status'] = true,
+            recipeStatus['paid'] = false
             res(recipeStatus)
         },1500)
     })
 }
 
+//==================>>>>>>>>>>>>>function of payment of recipes<<<<<<<<<<<<<<<<<<<<<================//
+
 function payOrder(){
     return new Promise((res,rej)=>{
         payment = true
         setTimeout(()=>{
-            recipeStatus.order_status= true,
-            recipeStatus.paid= true
+            recipeStatus['order_status'] = true,
+            recipeStatus['paid'] = true
         res(recipeStatus)
         },1000)
     })
 }
+
+//==================>>>>>>>>>>>>>function of thank you<<<<<<<<<<<<<<<<<<<<<================//
 
 function thankyouFunc(){
     if(recipeStatus["paid"] === true){
@@ -71,8 +85,9 @@ function thankyouFunc(){
     }
 }
 
+//==================>>>>>>>>>>>>>promise chaining to disply the thank you message after certain time and payment<<<<<<<<<<<<<<<<<<<<<================//
+
 takeOrder().then((burgers) => {
-    orderStatus = true;
     console.log(burgers);
 
     orderPrep().then((status)=>{
