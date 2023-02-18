@@ -7,7 +7,7 @@ fetch("https://dummyjson.com/products") //=================>>>> Fetching the dat
 
         let CardData = data.products
         let x = 0;
-
+ 
         //>>>>>>> Mapping the data to display every element in the data <<<<<<<<<<<//
         CardData.map(() => {
 
