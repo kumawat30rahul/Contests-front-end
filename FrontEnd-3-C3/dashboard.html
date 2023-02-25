@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>FE-3-C3</title>
+</head>
+<body>
+    <div class="wrapper_dashboard" id="wrapperDashboard">
+        <h2 class="dashboard_heading" id="dashboardHeading">YOUR DASHBOARD</h2>
+        <div class="user_info" id="userInfo">
+            <h3>Welcome Back <span class="user_name" id="userName"></span></h3>
+            <h3>Your Email id: <span class="user_email" id="userEmail"></span></h3>
+        </div>
+        <div class="dashboard_form" id="dashboardForm">
+            <h3 class="h">Change Password</h3>
+            <label for="oldPassword">Old Password</label>
+            <input type="password" class="old_password" id="oldPassword" required>
+            <label for="newPassword">New Password</label>
+            <input type="password" class="new_Password" id="newPassword" required>
+            <label for="confirmNewPassword">Confirm Password</label>
+            <input type="password" class="confirm_new_Password" id="confirmNewPassword" required>
+            <button type="submit" class="change_password" id="changePassword">Change</button>
+        </div>
+    </div>
+    <button class="logout_btn" id="logoutBtn">LOG OUT</button>
+    <script src="./dashboard.js"></script>
+</body>
+</html>
