@@ -1,0 +1,58 @@
+.signup_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.email_div,.pass_div,.consfirmpass_div{
+    margin: 10px;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email_div > label{
+    font-size: 24px;
+}
+.pass_div > label{
+    font-size: 24px;
+}
+.consfirmpass_div > label{
+    font-size: 24px;
+}
+
+input{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding-left: 10px;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+.valid{
+    border: 2px solid green;
+}
+
+.pending{
+    border: 2px solid blue;
+}
+
+p{
+    color: red;
+}
+
+.btn{
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    border: none;
+    background-color: blueviolet;
+}
