@@ -1,0 +1,23 @@
+.genre_filter{
+    margin: 10px auto;
+    padding: 5px 20px 40px 20px;
+    height: 100px;
+    width: 750px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filter{
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.795);
+    border-radius: 5px;
+}
