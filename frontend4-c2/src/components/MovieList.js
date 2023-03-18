@@ -1,8 +1,7 @@
 import React from 'react'
-import data from './data'
 import './movie.css'
 
-function MovieList() {
+function MovieList({movies}) {
   return (
     <div className='movie_list'>
         <table className='table'>
@@ -20,7 +19,7 @@ function MovieList() {
             </tr>
           </thead>
           <tbody className='tbody'>
-            {data.map((movie,index)=>(
+            {movies.map((movie,index)=>(
               <tr className={`movie${index+1}`} key={index+1}>
                 <td>{movie.title}</td>
                 <td>{movie.genre}</td>

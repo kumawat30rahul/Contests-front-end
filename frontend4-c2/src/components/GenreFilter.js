@@ -3,15 +3,7 @@ import data from './data'
 import './genre.css'
 import MovieList from './MovieList';
 
-function GenreFilter() {
-
-    let mySet = new Set();
-
-    data.forEach((movie) => {
-        mySet.add(movie.genre);
-    })
-
-    let newData = Array.from(mySet)
+function GenreFilter({genresArray}) {
 
     const genreHandler =(e)=>{
         let genre = e.target.innerText
@@ -23,7 +15,7 @@ function GenreFilter() {
     <div className='genre_filter'>
         <h3 className='title'>Filter By Genre</h3>
         <div className='filters'>
-            {newData.map((genre,index)=>(
+            {genresArray.map((genre,index)=>(
                 <div className='filter' key={index+1} onClick={genreHandler}>
                     {genre}
                 </div>
@@ -31,7 +23,7 @@ function GenreFilter() {
         </div>
     </div>
     <div className='movies'>
-        <MovieList />
+        <MovieList movies={data}/>
     </div>
     </>
   )
